@@ -1,0 +1,15 @@
+At first it was easy to fill empty methods of basic classes of game objects such as Card, Cards and Player.
+
+But then it got harder when it comes to relate these objects with each other by using some methods which should be implemented by us.
+
+Having implemented all basic classes of the project, I struggled to figure out how to use them in MyCardGame class since it had many ToDo parts left to us.
+
+Understanding the connection between non-implemented methods at different classes was a little bit hard at first glance.
+
+At some parts I thought this project would be easier if I just started it from beginning instead of making connections between non implemented methods
+
+As I understood what to do with which method through the game process, everything became clearer and more organized for me.
+
+In this project I understood merging separate code parts which was implemented by someone else could be harder than implementing all of the project by myself.
+
+Having done all parts of the project and main method, it was satisfying to see project runs without any error.

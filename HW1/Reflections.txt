@@ -1,0 +1,31 @@
+When I tried to combine code pieces even from my own group I have encountered that we separately wrote the same method without knowing
+
+There were some syntax errors
+
+There were multiple assignments of same variables
+
+Some methods and variables required in Game class didn't have corresponding methods implementations and variables in Hangman class
+
+Some data types of variable initialization in Game class didn't match with the returned data type of Hangman's methods
+
+Our writing and indentation styles were differing from each other which leads to incoherent coding
+
+There was a property missing which is knowSoFar, the required information was returned directly from a get method instead of returning the property
+
+There is a remarkable lack of coherence in the code because of separate locations of methods' with similar function
+
+There were some non-existing required methods in the main method of Game class. So, I had to implement those methods functions in main method
+
+Some variables which have to be final weren't final while some of them were, which was also an incoherent situation
+
+Some set methods were also required in order to manipulate some properties so that the requirements of the slide would be fulfilled
+
+Many expectations weren’t handled in my group members' codes
+
+There were some extra methods which were not mentioned in the slide
+
+There were some logical mistakes between related methods which were implemented by different group members
+
+Method implementations weren't efficient enough since connection between the methods were weak
+
+Generally, the codes were full of errors, they had a weak connection between each other since all implementations were developed with different strategies.
