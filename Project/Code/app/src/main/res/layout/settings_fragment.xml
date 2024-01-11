@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_100"
+    android:fillViewport="true"
+    android:minHeight="950dp"
+    android:scrollbarStyle="outsideOverlay"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="950dp"
+        tools:context=".view.PlaceFragment">
+
+        <TextView
+            android:id="@+id/ucuzYazılım"
+            android:layout_width="99dp"
+            android:layout_height="16dp"
+            android:text="Ucuz Yazılım A.Ş. ®"
+            android:textColor="@color/teal_700"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.682" />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:text="Logout"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/logoutLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.868"
+            app:layout_constraintStart_toEndOf="@+id/logoutLabel"
+            app:layout_constraintTop_toTopOf="@+id/logoutLabel"
+            app:layout_constraintVertical_bias="0.533" />
+
+        <Switch
+            android:id="@+id/privateProfile"
+            android:layout_width="347dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Private Profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.328"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.052" />
+
+        <TextView
+            android:id="@+id/profileSettings"
+            android:layout_width="199dp"
+            android:layout_height="33dp"
+            android:text="Profile Settings"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025" />
+
+        <TextView
+            android:id="@+id/privateProfileDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn on for private profile"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/privateProfile"
+            app:layout_constraintEnd_toEndOf="@+id/privateProfile"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/privateProfile"
+            app:layout_constraintTop_toTopOf="@+id/privateProfile"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/notificationLabel"
+            android:layout_width="199dp"
+            android:layout_height="33dp"
+            android:text="Notifications"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.247" />
+
+        <TextView
+            android:id="@+id/notificationSettings"
+            android:layout_width="347dp"
+            android:layout_height="53dp"
+            android:textColor="@color/teal_700"
+            android:clickable="true"
+            android:text="Enable/Disable notifications"
+            app:layout_constraintBottom_toTopOf="@+id/locationServices"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.328"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.851" />
+
+        <TextView
+            android:id="@+id/notificationDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click for opening settings"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/notificationSettings"
+            app:layout_constraintEnd_toEndOf="@+id/notificationSettings"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/notificationSettings"
+            app:layout_constraintTop_toTopOf="@+id/notificationSettings"
+            app:layout_constraintVertical_bias="0.588" />
+
+        <TextView
+            android:id="@+id/changeEmail"
+            android:layout_width="347dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:text="Email"
+            android:textColor="@color/teal_700"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.328"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/privateProfile"
+            app:layout_constraintVertical_bias="0.013" />
+
+        <TextView
+            android:id="@+id/changeEmailDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to change registered email"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/changeEmail"
+            app:layout_constraintEnd_toEndOf="@+id/changeEmail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/changeEmail"
+            app:layout_constraintTop_toBottomOf="@+id/privateProfile"
+            app:layout_constraintVertical_bias="0.714" />
+
+        <!--Linear Layout with horizontal orientation
+         and other properties-->
+
+
+        <TextView
+            android:id="@+id/changePassword"
+            android:layout_width="347dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:text="Password"
+            android:textColor="@color/teal_700"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.328"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/changeEmail"
+            app:layout_constraintVertical_bias="0.013" />
+
+        <TextView
+            android:id="@+id/changePasswordDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to change password"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/changePassword"
+            app:layout_constraintEnd_toEndOf="@+id/changePassword"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/changePassword"
+            app:layout_constraintTop_toBottomOf="@+id/changeEmail"
+            app:layout_constraintVertical_bias="0.657" />
+
+        <TextView
+            android:id="@+id/locationServicesLabel"
+            android:layout_width="199dp"
+            android:layout_height="33dp"
+            android:text="Location Services"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ucuzYazılım"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.529" />
+
+        <Switch
+            android:id="@+id/locationServices"
+            android:layout_width="347dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/teal_700"
+            android:checked="true"
+            android:text="Location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.389" />
+
+        <TextView
+            android:id="@+id/locationServicesDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="49dp"
+            android:text="Turn on for enabling location services"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/locationServices"
+            app:layout_constraintEnd_toEndOf="@+id/locationServices"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/locationServices"
+            app:layout_constraintTop_toTopOf="@+id/locationServices"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/logoutLabel"
+            android:layout_width="199dp"
+            android:layout_height="33dp"
+            android:text="Logout "
+            android:textColor="@color/purple_700"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.469" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
